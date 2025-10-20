@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pertama Saya - Internal CSS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+      color: #333; 
+    }
+
+    header {
+      background-color: pink;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    header h2 {
+      color: #003366;
+    }
+
+    nav {
+      background-color: navy;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .banner {
+      text-align: center;
+      background-color: #cde1ff;
+      padding: 10px;
+    }
+    .banner img {
+      width: 100%;
+      max-width: 1200px;
+      display: block;
+      margin: auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px auto; 
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box; 
+    }
+ 
+    .main-content {
+      width: 70%;
+    }
+    
+    .sidebar {
+      width: 25%;
+    }
+
+    .main-content h3 {
+      color: #004080;
+      border-bottom: 2px solid #cde1ff;
+      padding-bottom: 10px;
+    }
+    .main-content h4 {
+      color: #003366;
+      margin-bottom: 5px;
+    }
+    .main-content .post-meta {
+      font-size: 12px;
+      color: white;
+      margin-top: 0;
+    }
+    .main-content p {
+      line-height: 1.6;
+    }
+    .read-more {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    .sidebar h4 {
+      color: #004080;
+      margin-top: 0;
+    }
+    .sidebar .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .sidebar .profile p {
+      font-size: 14px;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #0056b3;
+    }
+    .sidebar hr {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #cde1ff;
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid #ccc;
+      margin-top: 10px;
+    }
+  </style>
+  </head>
+
+<body>
+
+  <header>
+    <h2>WEBSITE PERTAMA SAYA</h2>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Berita</a>
+    <a href="#">Tentang Kami</a>
+  </nav>
+
+  <div class="banner">
+    <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/227/2025/07/10/1106153-3581340982.jpg" alt="foto gunung bromo">
+  </div>
+
+  <div class="container">
+    
+    <div class="main-content card">
+      <h3>Artikel Terbaru</h3>
+      
+      <div class="post">
+        <h4>Pesona Gunung Bromo</h4>
+        <p class="post-meta">Ditulis oleh Dara Putri Nata Sukma pada 15 Oktober 2025</p>
+        <p>Memotret keindahan Bromo tak cukup ditangkap oleh lensa. Ia harus dirasakan oleh jiwa dinginnya, sunyinya, dan kemegahannya yang abadi. Berikut adalah beberapa potret bromo...</p>
+        <a href="#" class="read-more">Baca Selengkapnya →</a>
+      </div>
+    </div>
+
+    <div class="sidebar card">
+      <div class="profile">
+        <h4>Tentang Saya</h4>
+        <img src="fotoku.jpg" alt="Foto Profil">
+        <p>Haiii! Aku Tata, seorang mahasiswi yang suka melihat keindahan yang Tuhan ciptakan. Welcome to website pribadi saya!</p>
+      </div>
+      
+      <hr>
+
+      <div>
+        <h4>Artikel Populer</h4>
+        <ul>
+          <li><a href="#">Lautan awan bromo</a></li>
+          <li><a href="#">Bromo dan keindahannya</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div>
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="#">Fotografi</a></li>
+            <li><a href="#">Opini Pribadi</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright by:Dara Putri Nata Sukma | 4124016</p>
+  </footer>
+
+</body>
+</html>
